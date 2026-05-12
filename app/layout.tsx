@@ -2,8 +2,8 @@ import type { Metadata } from "next";
 import { Inter } from "next/font/google";
 import "./globals.css";
 import { ThemeProvider } from "@/components/theme-provider";
-import NavBar from "@/components/nav-bar";
 import Provider from "@/components/clerk-provider";
+
 
 const inter = Inter({
   variable: "--font-inter",
@@ -25,18 +25,12 @@ export default function RootLayout({
     <html
       lang="en"
       className={`${inter.variable} h-full antialiased`}
+      suppressHydrationWarning
     >
-      <body className="flex flex-col px-12 py-6 gap-6 h-full">  
-        <main className=" h-full">
-          <ThemeProvider
-          attribute="class"
-          defaultTheme="system"
-          enableSystem
-          disableTransitionOnChange
-        >
-          <Provider>{children}</Provider>
+      <body className="px-6 py-4 md:px-12 md:py-6 h-full ">  
+          <ThemeProvider>
+            <Provider>{children}</Provider>
           </ThemeProvider>
-        </main>
       </body>
     </html>
   );
