@@ -15,7 +15,7 @@ export default function Footer() {
         </div>
 
         <nav className="mb-6 w-full">
-          <ul className="flex flex-wrap justify-center gap-x-4 gap-y-1 text-base font-medium">
+          <ul className="flex flex-wrap justify-center gap-x-4 gap-y-1 text-base font-medium px-4">
             {footerLinks.map((link) => (
               <li key={link.name}>
                 <Link
