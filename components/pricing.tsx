@@ -7,6 +7,7 @@ import { cn } from '@/lib/utils';
 import type {AnimatedNumberProps,CardProps} from "@/utils/types"
 import { plans } from '@/utils/constants';
 import CustomButton from './button';
+import { StaggerItem } from './stagger-item';
 
 
 const Card: React.FC<CardProps> = ({ className, children }) => (
@@ -112,6 +113,7 @@ export default function SimplePricing() {
   return (
         <div className="w-full  grid grid-cols-1 md:grid-cols-2  xl:grid-cols-4 gap-4 p-4 md:p-6 h-fit">
           {plans.map((plan, index) => (
+            <StaggerItem key={plan.id}>
             <motion.div
               key={plan.id}
               initial={{ opacity: 0, y: 20 }}
@@ -247,6 +249,7 @@ export default function SimplePricing() {
                 )}
               </Card>
             </motion.div>
+            </StaggerItem>
           ))}
         </div>
   );

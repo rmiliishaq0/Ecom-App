@@ -150,3 +150,10 @@ export const socialIcons = [
       icon: FaTiktok
     },
   ];
+
+  export const navLinks = [
+        { href: "/", label: "Home" },
+        { href: "#", label: "Pricing" },
+        { href: "#", label: "About" },
+        { href: "#", label: "Contact" },
+    ];
