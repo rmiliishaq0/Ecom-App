@@ -6,7 +6,7 @@ export default function Feature({Icon, title, description}:{
     description:string
 }){
     return(
-        <Card>
+        <Card className="bg-background ">
             <CardHeader>
                 <Icon className="text-primary mb-2"/>
                 <CardTitle>{title}</CardTitle>

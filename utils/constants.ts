@@ -118,12 +118,10 @@ export const AccordionData = [
 ]
 
  export const footerLinks = [
-    { name: "Features", href: "#" },
-    { name: "Solution", href: "#" },
-    { name: "Customers", href: "#" },
-    { name: "Pricing", href: "#" },
-    { name: "Help", href: "#" },
-    { name: "About", href: "#" },
+    { name: "About", href: "/about" },
+    { name: "Privacy Policy", href: "/privacy-policy" },
+    { name: "Terms and Conditions", href: "/terms-and-conditions" },
+    { name: "Contact", href: "/contact" },
   ];
 
 
@@ -153,7 +151,8 @@ export const socialIcons = [
 
   export const navLinks = [
         { href: "/", label: "Home" },
-        { href: "#", label: "Pricing" },
-        { href: "#", label: "About" },
-        { href: "#", label: "Contact" },
+        { href: "/products", label: "Products" },
+        { href: "/#features", label: "Features" },
+        { href: "/#pricing", label: "Pricing" },
+        { href: "/#faq", label: "FAQ" },
     ];

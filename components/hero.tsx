@@ -9,11 +9,11 @@ import OpacityAnimation from "./opacity-animation";
 export default function Hero() {
     return (
         <OpacityAnimation>
-            <Card className="  rounded-3xl md:p-6 p-4 relative ">
+            <Card className="rounded-3xl md:p-6 p-4 relative ">
             <HeroAnimation>
                 <div className="z-10 flex flex-col items-center justify-center lg:py-20 md:py-16 py-10 relative">
                     <div className="flex items-center justify-center flex-col gap-4">
-                    <div className="glow inline-flex items-center gap-2 rounded-full border border-primary/30 px-4 py-1.5 text-sm text-primary">
+                    <div className="bg-background  glow inline-flex items-center gap-2 rounded-full border border-primary/30 px-4 py-1.5 text-sm text-primary">
                         <Zap />
                         Next-Gen Access
                     </div>

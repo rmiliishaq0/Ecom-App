@@ -23,7 +23,7 @@ export default function Faqs(){
                     <Accordion
                         type="single"
                         collapsible
-                        className="rounded-lg border"
+                        className="rounded-lg border bg-background "
                         defaultValue=""
                         >
                         {AccordionData.map((item) => (

@@ -11,16 +11,16 @@ export default function Home() {
             <section className="md:mt-6 lg:mt-8 mt-4">
                <Hero/> 
             </section>
-            <section>
+            <section id="features" className="lg:scroll-mt-32 md:scroll-mt-8 ">
                 <Features/>
             </section>
-            <section>
+            <section id="pricing" className="lg:scroll-mt-32 md:scroll-mt-8">
                 <PricingCards/>
             </section>
-            <section>
+            <section id="faq" className="lg:scroll-mt-32 md:scroll-mt-8 ">
                 <Faqs/>
             </section>
-            <section>
+            <section >
                <CallToActionCard/>
             </section>  
             <section>
