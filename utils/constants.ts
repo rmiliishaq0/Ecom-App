@@ -152,6 +152,7 @@ export const socialIcons = [
   export const navLinks = [
         { href: "/", label: "Home" },
         { href: "/products", label: "Products" },
+        {href:"/packs",label: "Packs" },
         { href: "/#features", label: "Features" },
         { href: "/#pricing", label: "Pricing" },
         { href: "/#faq", label: "FAQ" },
